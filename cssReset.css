@@ -28,6 +28,7 @@ dl,
 dd {
   margin: 0;
   font-family: 'Manrope', sans-serif;
+  color: hsl(225, 20%, 60%);
 }
 
 /* Выставляем основные настройки по-умолчанию для body */
