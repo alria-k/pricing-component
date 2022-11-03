@@ -22,9 +22,92 @@
     <title>Frontend Mentor | Interactive pricing component</title>
   </head>
   <body>
-    Simple, traffic-based pricing Sign-up for our 30-day trial. No credit card
-    required. Pageviews $ /month Monthly Billing Yearly Billing 25% discount
-    Unlimited websites 100% data ownership Email reports Start my trial
+    <header class="header">
+      <div class="container">
+        <div class="header__text">
+          <h1 class="header-title">Simple, traffic-based pricing</h1>
+          <p class="header-p">
+            Sign-up for our 30-day trial. No credit card required.
+          </p>
+        </div>
+        <div class="trial__box">
+          <div class="trial__top">
+            <p class="trial__top-title">100K Pageviews</p>
+            <p class="trial__top-price">
+              $ 0<span class="trial__top-title">/month</span>
+            </p>
+          </div>
+          <div class="trial__center">
+            <label class="range__box">
+              <input
+                class="range__item"
+                type="range"
+                min="0"
+                max="32"
+                step="1"
+                value="0"
+              />
+            </label>
+          </div>
+          <div class="trial__center-plans">
+            <p class="trial__center-p">Monthly Billing</p>
+            <label class="checkbox__box">
+              <span></span>
+              <input class="checkbox__item" type="checkbox" />
+            </label>
+            <p class="trial__center-p">
+              Yearly Billing
+              <span class="dicount__box"
+                ><span class="minus">-</span>25%
+                <span class="dicount"></span>discount</span
+              >
+            </p>
+          </div>
+          <div class="trial__bottom">
+            <div class="trial__bottom-conditions">
+              <ul>
+                <li class="conditions-item">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="9" height="8">
+                    <path
+                      fill="none"
+                      stroke="#10D8C4"
+                      stroke-width="2"
+                      d="M1 4.134l1.907 1.908L7.949 1"
+                    />
+                  </svg>
+                  Unlimited websites
+                </li>
+                <li class="conditions-item">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="9" height="8">
+                    <path
+                      fill="none"
+                      stroke="#10D8C4"
+                      stroke-width="2"
+                      d="M1 4.134l1.907 1.908L7.949 1"
+                    />
+                  </svg>
+                  100% data ownership
+                </li>
+                <li class="conditions-item">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="9" height="8">
+                    <path
+                      fill="none"
+                      stroke="#10D8C4"
+                      stroke-width="2"
+                      d="M1 4.134l1.907 1.908L7.949 1"
+                    />
+                  </svg>
+                  Email reports
+                </li>
+              </ul>
+            </div>
+            <div class="trial__bottom-btn">
+              <button class="trial__button">Start my trial</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
   </body>
   <script src="./app.js"></script>
 </html>
